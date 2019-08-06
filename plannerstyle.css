@@ -29,8 +29,11 @@ img{
 .plannercontent{
   display: flex;
   justify-content: space-around;
+<<<<<<< HEAD
 }
 
 .Sun , .Mon , .Tues , .Wed , .Thurs ,  .Fri , .Sat{
   border: 1px solid black;
+=======
+>>>>>>> created personal file
 }
