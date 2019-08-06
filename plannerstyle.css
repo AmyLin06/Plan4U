@@ -23,7 +23,7 @@ img{
 }
 
 .title{
-  margin-left: 540px;
+  margin-left: 570px;
 }
 
 .plannercontent{
@@ -40,6 +40,23 @@ img{
 
 .Sun , .Mon , .Tues , .Wed , .Thurs ,  .Fri , .Sat{
   border: 1px solid black;
+  padding: 12px;
+}
+
+.expensetitle , .incometitle{
+  display: flex;
+  justify-content: space-around;
+}
+
+.slogan{
+  font-size: 20px;
+}
+
+.Amy , .Jenny , .Susan , .Yonglin{
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  margin: 5px;
 }
 
 .Sun , .Mon , .Tues , .Wed , .Thurs ,  .Fri , .Sat{
