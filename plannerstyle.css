@@ -1,30 +1,10 @@
-/* html{
-  height: 100%;
-} */
-
 body{
   text-align: center;
-  background-color: #fcf2f0;
-  font-size: 23px;
-  font-family: 'Chathura', sans-serif;
-  margin: 0;
-  overflow:auto;
-  /* position: fixed; */
 }
 
-/* .content{
-  overflow-y: scroll;
-} */
-
-.footer{
-  background-color: #799bc1;
-  left: 0;
-  bottom: 0;
-  width:100%;
-  /* padding-bottom: 5px; */
-  position: fixed;
-  /* height:200px; */
-  overflow: hidden;
+.catagories{
+  display: flex;
+  justify-content: space-around;
 }
 
 .list{
@@ -33,199 +13,20 @@ body{
 }
 
 img{
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
+}
+
+.header{
+  display: flex;
+  justify-content:flex-start;
+}
+
+.title{
+  margin-left: 540px;
 }
 
 .plannercontent{
   display: flex;
   justify-content: space-around;
 }
-
-.Sun , .Mon , .Tues , .Wed , .Thurs ,  .Fri , .Sat{
-  border: 1px solid black;
-  padding: 15px;
-}
-
-.expensetitle , .incometitle{
-  display: flex;
-  justify-content: space-around;
-}
-
-.slogan{
-  font-size: 25px;
-  font-family: 'Cinzel', serif;
-}
-
-.Amy , .Jenny , .Susan , .Yonglin{
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid black;
-  margin: 5px;
-}
-
-.historylist{
-  display: flex;
-  justify-content: space-around;
-}
-
-.clearall , #clearexpense{
-  margin-left: 1300px;
-  font-size: 25px;
-  outline: none;
-}
-
-.todo , .reminder{
-  background-color: #e3e4e6;
-  padding: 40px;
-  padding-bottom: 80px;
-  border-radius: 10px;
-  font-size: 30px;
-}
-
-#inputsun, #inputmon, #inputtues, #inputwed, #inputthurs, #inputfri, #inputsat, #inputexpense, #expenseamount, #inputincome, #inputamount{
-  width: 120px;
-  height:20px;
-  border-radius: 10px;
-  font-size: 20px;
-  font-family: 'Chathura', sans-serif;
-  outline: none;
-}
-
-#inputreminder, #inputtodo{
-  width: 140px;
-  height:20px;
-  border-radius: 10px;
-  font-family: 'Chathura', sans-serif;
-  font-size: 20px;
-  outline: none;
-}
-
-.clearallbutton, #clearexpense{
-  width: 100px;
-  border-radius: 10px;
-  font-family: 'Chathura', sans-serif;
-  font-size: 25px;
-  outline: none;
-}
-
-/* .logotitle{ */
-  /* display: flex;
-  justify-content: center;
-  margin-bottom: 20px; */
-  /* height: 36px;
-  margin-right: 1100px;
-  position: absolute;
-  left: 63px;
-  top: 0; */
-/* }  */
-
-header{
-  position: fixed;
-  display: flex;
-  height: 80px;
-  /* padding: 0 40px; */
-  width: 100%;
-  background-color: #799bc1;
-  /* left: 9px;
-  top: -8px; */
-  /* float: right; */
-
-}
-
-nav{
-  position: absolute;
-  top: 30px;
-  right: 0px;
-  /* padding: 0 10px; */
-  font-family: 'Petit Formal Script', cursive;
-  font-size: 15px;
-}
-
-a{
-  border-radius: 10px;
-  margin:10px;
-  /* background-color: #ffffff; */
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-}
-
-a:hover{
-  background-color: #C1D6A7;
-  color: #FF9494;
-}
-
-#sunadd, #monadd, #tuesadd, #wedadd, #thursadd, #friadd, #satadd, #addtodo, #addreminder{
-  font-family: 'Chathura', sans-serif;
-  border-radius: 10px;
-  height:25px;
-  width:40px;
-  font-size: 17px;
-  outline: none;
-
-}
-
-#clearsun, #clearmon, #cleartues, #clearwed, #clearthurs, #clearfri, #clearsat, #cleartodo, #clearreminder{
-  font-family: 'Chathura', sans-serif;
-  border-radius: 10px;
-  width:120px;
-  font-size: 20px;
-  outline: none;
-}
-
-#incomebutton, #expensebutton{
-  font-family: 'Chathura', sans-serif;
-  border-radius: 10px;
-  width:50px;
-  font-size: 17px;
-  outline: none;
-}
-
-.intro{
-  background-image: url("https://candidlykeri.com/s/Thumbnail_2019_February7.jpg");
-  padding:10px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  color: grey;
-  height:200px;
-  border-radius: 30px;
-}
-
-.introp{
-  font-family: 'Cinzel', serif;
-  font-size: 15px;
-}
-
-.hometitle{
-  position: absolute;
-  left: 96px;
-  font-size: 65px;
-  top: -53px;
-}
-
-.plannertitle, .moneytitle, .abouttitle{
-  margin: 0;
-  padding-left: 1.5em;
-  font-size: 65px;
-  top: -10px;
-  position: absolute;
-}
-
-h1{
-  color: white;
-  text-shadow: 5px 5px 0 #545357;
-}
-
-h2{
-  font-size: 50px;
-}
-
-.maincontent, .content, .plannercontent {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-/* p{
-  padding: 0px;
-} */
