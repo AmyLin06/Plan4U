@@ -174,12 +174,22 @@ a:hover{
   outline: none;
 }
 
+<<<<<<< HEAD
 #incomebutton, #expensebutton{
   font-family: 'Chathura', sans-serif;
   border-radius: 10px;
   width:50px;
   font-size: 17px;
   outline: none;
+=======
+.title{
+  margin-left: 540px;
+}
+
+.plannercontent{
+  display: flex;
+  justify-content: space-around;
+>>>>>>> created personal file
 }
 
 .intro{
