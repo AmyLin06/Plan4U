@@ -2,77 +2,22 @@
 <html>
   <head>
     <link rel="stylesheet" href="plannerstyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Long+Cang&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Chathura&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class = "logo">
-        <img id = "logo" src = "https://s3-eu-west-1.amazonaws.com/tpd/logos/588a2d590000ff00059b855a/0x0.png"> </a>
+    <div class = "header">
+      <div class = "logo" onclick = "window.location.href = 'plannerproject.html'">
+        <img src = "https://s3-eu-west-1.amazonaws.com/tpd/logos/588a2d590000ff00059b855a/0x0.png">
       </div>
-      <h1 class = "moneytitle">Money Tracker</h1>
-      <nav class = "catagories">
-        <a href = "planner.html">Weekly Planner</a>
-        <a href = "moneyTracker.html"> Money Tracker</a>
-        <a href = "aboutus.html">About Us</a>
-      </nav>
-    </header>
-    <br>
-    <div class = "content">
-      <div class = "total">
-        <h2 id = "totalamount">Total:</h2>
-      </div>
-      <div class = "income">
-        Income:  <input id = "inputincome" placeholder = "Description">
-        Amount:  <input id = "inputamount" placeholder = "Don't enter '$' sign">
-        <button id = "incomebutton">Add</button>
-      </div>
-      <br>
-      <div class = "search">
-        Expenses:  <input id = "inputexpense" placeholder = "Description">
-        Amount: <input id = "expenseamount" placeholder = "Don't enter '$' sign" >
-        <button id = "expensebutton">Add</button>
-      </div>
-      <div class = "historylist">
-          <ul id = "records">History:  </ul>
-          <ul id = "pushprice">Amount:  </ul>
-      </div>
-      <div>
-        <button id = "clearexpense">Clear All</button>
+      <div class = "title">
+        <h1>Money Tracker</h1>
       </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class = "footer">
-      <p>©️Duallers<p>
+    <div class = "catagories">
+      <a href = "planner.html">Weekly Planner</a>
+      <a href = "moneyTracker.html"> Money Tracker</a>
+      <a href = "aboutus.html">About Us</a>
+    </div>
+    <div class = "content">
     </div>
   </body>
-      <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#config-web-app -->
-         <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-         <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyCwHYulvW5O8nDB2xFkN70KOaN-c-qlANA",
-        authDomain: "planner-ecf49.firebaseapp.com",
-        databaseURL: "https://planner-ecf49.firebaseio.com",
-        projectId: "planner-ecf49",
-        storageBucket: "planner-ecf49.appspot.com",
-        messagingSenderId: "91148778677",
-        appId: "1:91148778677:web:2afa31dda3059a78"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-      <script src ="moneytracker.js"></script>
 </html>
