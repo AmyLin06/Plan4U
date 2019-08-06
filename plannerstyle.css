@@ -23,5 +23,10 @@ img{
 }
 
 .title{
-  margin-left: 550px;
+  margin-left: 540px;
+}
+
+.plannercontent{
+  display: flex;
+  justify-content: space-around;
 }
