@@ -30,3 +30,7 @@ img{
   display: flex;
   justify-content: space-around;
 }
+
+.Sun , .Mon , .Tues , .Wed , .Thurs ,  .Fri , .Sat{
+  border: 1px solid black;
+}
