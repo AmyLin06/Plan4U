@@ -1,0 +1,27 @@
+body{
+  text-align: center;
+}
+
+.catagories{
+  display: flex;
+  justify-content: space-around;
+}
+
+.list{
+  display: flex;
+  justify-content: space-around;
+}
+
+img{
+  width: 75px;
+  height: 75px;
+}
+
+.header{
+  display: flex;
+  justify-content:flex-start;
+}
+
+.title{
+  margin-left: 550px;
+}
