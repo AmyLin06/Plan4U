@@ -37,3 +37,7 @@ img{
 =======
 >>>>>>> created personal file
 }
+
+.Sun , .Mon , .Tues , .Wed , .Thurs ,  .Fri , .Sat{
+  border: 1px solid black;
+}
