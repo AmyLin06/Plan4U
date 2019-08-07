@@ -1,10 +1,23 @@
 body{
   text-align: center;
+  background-color: #dde3ec;
+  font-family: 'Amatic SC', cursive;
+  font-size: 23px;
 }
 
 .catagories{
   display: flex;
   justify-content: space-around;
+  background-color: 	#f4f2f2;
+  font-family: 'Petit Formal Script', cursive;
+}
+
+.footer{
+  background-color: #9ca48f;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:100%;
 }
 
 .list{
@@ -20,10 +33,9 @@ img{
 .header{
   display: flex;
   justify-content:flex-start;
-}
-
-.title{
-  margin-left: 570px;
+  font-family: 'Cinzel', serif;
+  background-color: #9ca48f;
+  height: 75px;
 }
 
 .plannercontent{
@@ -33,7 +45,7 @@ img{
 
 .Sun , .Mon , .Tues , .Wed , .Thurs ,  .Fri , .Sat{
   border: 1px solid black;
-  padding: 12px;
+  padding: 15px;
 }
 
 .expensetitle , .incometitle{
@@ -42,7 +54,8 @@ img{
 }
 
 .slogan{
-  font-size: 20px;
+  font-size: 30px;
+  font-family: 'Cinzel', serif;
 }
 
 .Amy , .Jenny , .Susan , .Yonglin{
@@ -50,4 +63,22 @@ img{
   justify-content: space-around;
   border: 1px solid black;
   margin: 5px;
+}
+
+.history{
+  display: flex;
+  justify-content: space-around;
+}
+
+.clearall , .clearexpense{
+  margin-left: 1300px;
+}
+
+.todo , .reminder{
+  background-color: #fcf2f0;
+  padding: 30px;
+  border-radius: 10px;
+}
+.title{
+  margin-bottom: 100px;
 }
