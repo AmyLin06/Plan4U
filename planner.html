@@ -4,80 +4,77 @@
     <link rel="stylesheet" href="plannerstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Long+Cang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chathura&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class = "header">
-      <div class = "logo" onclick = "window.location.href = 'plannerproject.html'">
-        <img src = "https://s3-eu-west-1.amazonaws.com/tpd/logos/588a2d590000ff00059b855a/0x0.png">
+    <header>
+      <div class = "logotitle">
+        <img id = "logo" src = "https://s3-eu-west-1.amazonaws.com/tpd/logos/588a2d590000ff00059b855a/0x0.png"> </a>
       </div>
-      <div class = "title">
-        <h1>Weekly Planner</h1>
-      </div>
-    </div>
-    <br>
-    <div class = "catagories">
-      <a href = "planner.html">Weekly Planner</a>
-      <a href = "moneyTracker.html"> Money Tracker</a>
-      <a href = "aboutus.html">About Us</a>
-    </div>
-    <br>
+      <h1 class = "plannertitle">Weekly Planner</h1>
+      <nav class = "catagories">
+        <a href = "planner.html">Weekly Planner</a>
+        <a href = "moneyTracker.html"> Money Tracker</a>
+        <a href = "aboutus.html">About Us</a>
+      </nav>
+    </header>
     <br>
     <div class = "plannercontent">
       <div class = "Sun">
         <p>Sunday</p>
-        <input class = "inputsun">
+        <input id = "inputsun">
         <button id = "sunadd">Add</button>
-        <ul class = "sunplan"></ul>
+        <ul id = "sunplan"></ul>
         <br>
         <button id = "clearsun">Clear</button>
       </div>
       <div class = "Mon">
         <p>Monday</p>
-        <input class = "inputmon">
+        <input id = "inputmon">
         <button id = "monadd">Add</button>
-        <ul class = "monplan"></ul>
+        <ul id = "monplan"></ul>
         <br>
         <button id = "clearmon">Clear</button>
       </div>
       <div class = "Tues">
         <p>Tuesday</p>
-        <input class = "inputtues">
+        <input id = "inputtues">
         <button id = "tuesadd">Add</button>
-        <ul class = "tuesplan"></ul>
+        <ul id = "tuesplan"></ul>
         <br>
         <button id = "cleartues">Clear</button>
       </div>
       <div class = "Wed">
         <p>Wednesday</p>
-        <input class = "inputwed">
+        <input id = "inputwed">
         <button id = "wedadd">Add</button>
-        <ul class = "wedplan"></ul>
+        <ul id = "wedplan"></ul>
         <br>
         <button id = "clearwed">Clear</button>
       </div>
       <div class = "Thurs">
         <p>Thursday</p>
-        <input class = "inputthurs">
+        <input id = "inputthurs">
         <button id = "thursadd">Add</button>
-        <ul class = "thursplan"></ul>
+        <ul id = "thursplan"></ul>
         <br>
         <button id = "clearthurs">Clear</button>
       </div>
       <div class = "Fri">
         <p>Friday</p>
-        <input class = "inputfri">
+        <input id = "inputfri">
         <button id = "friadd">Add</button>
-        <ul class = "friplan"></ul>
+        <ul id = "friplan"></ul>
         <br>
         <button id = "clearfri">Clear</button>
       </div>
       <div class = "Sat">
         <p>Saturday</p>
-        <input class = "inputsat">
+        <input id = "inputsat">
         <button id = "satadd">Add</button>
-        <ul class = "satplan"></ul>
+        <ul id = "satplan"></ul>
         <br>
         <button id = "clearsat">Clear</button>
       </div>
@@ -86,8 +83,36 @@
     <div class = "clearall">
         <button class = "clearallbutton">Clear all</button>
     </div>
-    <div class = "footer">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class = "footer">
       <p>©️Duallers<p>
-    <div>
+    </footer>
   </body>
-</html
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#config-web-app -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+    <script>
+    // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCwHYulvW5O8nDB2xFkN70KOaN-c-qlANA",
+        authDomain: "planner-ecf49.firebaseapp.com",
+        databaseURL: "https://planner-ecf49.firebaseio.com",
+        projectId: "planner-ecf49",
+        storageBucket: "planner-ecf49.appspot.com",
+        messagingSenderId: "91148778677",
+        appId: "1:91148778677:web:2afa31dda3059a78"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="planner.js"></script>
+</html>
