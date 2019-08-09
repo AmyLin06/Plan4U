@@ -23,7 +23,7 @@
     <br>
     <div class = "content">
       <div class = "total">
-        <h2>Total:</h2>
+        <h2 id = "totalamount">Total:</h2>
       </div>
       <div class = "income">
         Income:  <input id = "inputincome" placeholder = "Description">
@@ -53,4 +53,26 @@
       <p>©️Duallers<p>
     </div>
   </body>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#config-web-app -->
+         <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCwHYulvW5O8nDB2xFkN70KOaN-c-qlANA",
+        authDomain: "planner-ecf49.firebaseapp.com",
+        databaseURL: "https://planner-ecf49.firebaseio.com",
+        projectId: "planner-ecf49",
+        storageBucket: "planner-ecf49.appspot.com",
+        messagingSenderId: "91148778677",
+        appId: "1:91148778677:web:2afa31dda3059a78"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+      <script src ="moneytracker.js"></script>
 </html>
