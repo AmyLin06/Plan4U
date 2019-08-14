@@ -1,5 +1,14 @@
 var db = firebase.firestore();
 
+var logo =  document.getElementById('logo');
+console.log("loaded page");
+
+logo.onmousedown = function(){
+  window.location.href = "plannerproject.html";
+  console.log("mouse down");
+};
+
+
 var sunadd = document.getElementById('sunadd');
 var monadd = document.getElementById('monadd');
 var tuesadd = document.getElementById('tuesadd');
@@ -114,41 +123,41 @@ clearallbutton.onmousedown = function(){
   });
 };
 
-db.collection("users").add({
-    sunlist: "inputsun",
-})
-.then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
-})
-.catch(function(error) {
-    console.error("Error adding document: ", error);
-});
+//db.collection("users").add({
+    //sunlist: "inputsun",
+//})
+//.then(function(docRef) {
+    //console.log("Document written with ID: ", docRef.id);
+//})
+//.catch(function(error) {
+    //console.error("Error adding document: ", error);
+//});
 
-db.collection("users").add({
-    monlist: "inputmon",
-})
-.then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
-})
-.catch(function(error) {
-    console.error("Error adding document: ", error);
-});
+//db.collection("users").add({
+  //  monlist: "inputmon",
+//})
+//.then(function(docRef) {
+  //  console.log("Document written with ID: ", docRef.id);
+//})
+//.catch(function(error) {
+  //  console.error("Error adding document: ", error);
+//});
 
-db.collection("users").add({
-    tueslist: "inputtues",
-})
-.then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
-})
-.catch(function(error) {
-    console.error("Error adding document: ", error);
-});
-db.collection("users").add({
-    wedlist: "inputwed",
-})
-.then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
-})
+//db.collection("users").add({
+  //  tueslist: "inputtues",
+//})
+//.then(function(docRef) {
+  //  console.log("Document written with ID: ", docRef.id);
+//})
+//.catch(function(error) {
+  //  console.error("Error adding document: ", error);
+//});
+//db.collection("users").add({
+  //  wedlist: "inputwed",
+//})
+//.then(function(docRef) {
+  //  console.log("Document written with ID: ", docRef.id);
+//})
 .catch(function(error) {
     console.error("Error adding document: ", error);
 });
