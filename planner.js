@@ -1,5 +1,9 @@
 var db = firebase.firestore();
 
+logo.onmousedown = function(){
+  document.location.href = "plannerproject.html";
+}
+
 var sunadd = document.getElementById('sunadd');
 var monadd = document.getElementById('monadd');
 var tuesadd = document.getElementById('tuesadd');
@@ -8,15 +12,15 @@ var thursadd = document.getElementById('thursadd');
 var friadd = document.getElementById('friadd');
 var satadd = document.getElementById('satadd');
 
-var clearsun = document.getElementById('clearsun')
-var clearmon = document.getElementById('clearmon')
-var cleartues = document.getElementById('cleartues')
-var clearwed = document.getElementById('clearwed')
-var clearthurs = document.getElementById('clearthurs')
-var clearfri = document.getElementById('clearfri')
-var clearsat = document.getElementById('clearsat')
+var clearsun = document.getElementById('clearsun');
+var clearmon = document.getElementById('clearmon');
+var cleartues = document.getElementById('cleartues');
+var clearwed = document.getElementById('clearwed');
+var clearthurs = document.getElementById('clearthurs');
+var clearfri = document.getElementById('clearfri');
+var clearsat = document.getElementById('clearsat');
 
-var clearall = document.getElementById('clearallbutton')
+var clearall = document.getElementById('clearallbutton');
 
 sunadd.onclick = function(){
   var inputsun = document.getElementById('inputsun');
@@ -35,7 +39,7 @@ sunadd.onclick = function(){
        console.error("Error adding document: ", error);
        inputsun.value = ""
    });
- };
+ }
 
 
 monadd.onclick = function(){
@@ -56,6 +60,7 @@ monadd.onclick = function(){
        inputmon.value = ""
    });
  }
+
 tuesadd.onclick = function(){
   var inputtues = document.getElementById('inputtues');
   var tuesplan = document.getElementById('tuesplan');
@@ -146,7 +151,7 @@ satadd.onclick = function(){
  .catch((error)=> {
      console.error("Error adding document: ", error);
      inpursat.value = ""
-});
+  });
 }
 
 clearsun.onclick = function(){
@@ -160,7 +165,7 @@ clearsun.onclick = function(){
         console.error("Error removing document:", error);
       });
     });
-})
+  });
 };
 
 clearmon.onclick = function(){
@@ -174,7 +179,7 @@ clearmon.onclick = function(){
         console.error("Error removing document:", error);
       });
     });
-})
+  });
 };
 cleartues.onclick = function(){
   document.getElementById("tuesplan").innerHTML = "";
@@ -187,7 +192,7 @@ cleartues.onclick = function(){
         console.error("Error removing document:", error);
       });
     });
-})
+  });
 };
 clearwed.onclick = function(){
   document.getElementById("wedplan").innerHTML = "";
@@ -200,7 +205,7 @@ clearwed.onclick = function(){
         console.error("Error removing document:", error);
       });
     });
-})
+  });
 };
 clearthurs.onclick = function(){
   document.getElementById("thursplan").innerHTML = "";
@@ -213,7 +218,7 @@ clearthurs.onclick = function(){
         console.error("Error removing document:", error);
       });
     });
-})
+  });
 };
 clearfri.onclick = function(){
   document.getElementById("friplan").innerHTML = "";
@@ -226,7 +231,7 @@ clearfri.onclick = function(){
         console.error("Error removing document:", error);
       });
     });
-})
+  });
 };
 clearsat.onclick = function(){
   document.getElementById("satplan").innerHTML = "";
@@ -239,7 +244,7 @@ clearsat.onclick = function(){
         console.error("Error removing document:", error);
       });
     });
-})
+  });
 };
 
 clearall.onclick = function(){
@@ -250,11 +255,91 @@ clearall.onclick = function(){
   document.getElementById("thursplan").innerHTML = "";
   document.getElementById("friplan").innerHTML = "";
   document.getElementById("satplan").innerHTML = "";
-  db.collection("users").doc("li.id").delete().then(function() {
-      console.log("Document successfully deleted!");
-  }).catch(function(error) {
-      console.error("Error removing document: ", error);
-  });
+  document.getElementById("sunplan").innerHTML = "";
+
+     db.collection("sun").get().then((querySnapshot) => {
+
+       querySnapshot.forEach((doc) => {
+         db.collection("sun").doc(doc.id).delete().then(function(){
+           console.log("Document successfully deleted!");
+         }).catch(function(error){
+           console.error("Error removing document:", error);
+         });
+       });
+     });
+
+     document.getElementById("monplan").innerHTML = "";
+     db.collection("mon").get().then((querySnapshot) => {
+
+      querySnapshot.forEach((doc) => {
+         db.collection("mon").doc(doc.id).delete().then(function(){
+           console.log("Document successfully deleted!");
+         }).catch(function(error){
+           console.error("Error removing document:", error);
+         });
+       });
+     });
+
+     document.getElementById("tuesplan").innerHTML = "";
+     db.collection("tues").get().then((querySnapshot) => {
+
+       querySnapshot.forEach((doc) => {
+         db.collection("tues").doc(doc.id).delete().then(function(){
+           console.log("Document successfully deleted!");
+         }).catch(function(error){
+           console.error("Error removing document:", error);
+         });
+       });
+     });
+
+     document.getElementById("wedplan").innerHTML = "";
+     db.collection("wed").get().then((querySnapshot) => {
+
+       querySnapshot.forEach((doc) => {
+         db.collection("wed").doc(doc.id).delete().then(function(){
+           console.log("Document successfully deleted!");
+         }).catch(function(error){
+           console.error("Error removing document:", error);
+         });
+       });
+     });
+
+     document.getElementById("thursplan").innerHTML = "";
+     db.collection("thurs").get().then((querySnapshot) => {
+
+       querySnapshot.forEach((doc) => {
+         db.collection("thurs").doc(doc.id).delete().then(function(){
+           console.log("Document successfully deleted!");
+         }).catch(function(error){
+           console.error("Error removing document:", error);
+         });
+       });
+     });
+
+     document.getElementById("friplan").innerHTML = "";
+     db.collection("fri").get().then((querySnapshot) => {
+
+       querySnapshot.forEach((doc) => {
+         db.collection("fri").doc(doc.id).delete().then(function(){
+           console.log("Document successfully deleted!");
+         }).catch(function(error){
+           console.error("Error removing document:", error);
+         });
+       });
+     });
+
+     document.getElementById("satplan").innerHTML = "";
+     db.collection("sat").get().then((querySnapshot) => {
+
+      querySnapshot.forEach((doc) => {
+         db.collection("sat").doc(doc.id).delete().then(function(){
+           console.log("Document successfully deleted!");
+         }).catch(function(error){
+           console.error("Error removing document:", error);
+         });
+       });
+     });
+
 };
 
 db.collection("sun").get().then((querySnapshot) => {
