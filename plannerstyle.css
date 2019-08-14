@@ -24,7 +24,7 @@ body{
   /* padding-bottom: 5px; */
   position: fixed;
   /* height:200px; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .list{
@@ -45,6 +45,7 @@ img{
 .Sun , .Mon , .Tues , .Wed , .Thurs ,  .Fri , .Sat{
   border: 1px solid black;
   padding: 15px;
+  max-width: 13%;
 }
 
 .expensetitle , .incometitle{
@@ -52,17 +53,39 @@ img{
   justify-content: space-around;
 }
 
-.slogan{
-  font-size: 25px;
+#slogan{
+  font-size: 40px;
   font-family: 'Cinzel', serif;
+  margin: 0;
+  font-size: 40px;
+  position: absolute;
+  margin-left: 320px;
 }
 
 .Amy , .Jenny , .Susan , .Yonglin{
   display: flex;
   justify-content: space-around;
-  border: 1px solid black;
   margin: 5px;
+  border: 2px solid black;
 }
+
+.Amyintro , .Yongintro , .Xiaointro , .Susintro{
+  width: 30%;
+}
+
+.aboutAmy , .aboutYong , .aboutXiao , .aboutSus{
+  margin-top: 40px;
+  margin-right: 30px;
+  width: 80%;
+  font-size: 30px;
+}
+
+.Amyimg , .Yongimg , .Xiaoimg , .Susimg{
+  height: 200px;
+  width: 200px;
+  border-radius: 1000px;
+}
+
 
 .historylist{
   display: flex;
@@ -81,6 +104,8 @@ img{
   padding-bottom: 80px;
   border-radius: 10px;
   font-size: 30px;
+  max-width: 36%;
+  width: 40%;
 }
 
 #inputsun, #inputmon, #inputtues, #inputwed, #inputthurs, #inputfri, #inputsat, #inputexpense, #expenseamount, #inputincome, #inputamount{
@@ -101,7 +126,7 @@ img{
   outline: none;
 }
 
-.clearallbutton, #clearexpense{
+#clearallbutton, #clearexpense{
   width: 100px;
   border-radius: 10px;
   font-family: 'Chathura', sans-serif;
@@ -130,6 +155,8 @@ header{
   /* left: 9px;
   top: -8px; */
   /* float: right; */
+  opacity: 100%;
+  z-index: 50;
 
 }
 
@@ -184,12 +211,14 @@ a:hover{
 
 .intro{
   background-image: url("https://candidlykeri.com/s/Thumbnail_2019_February7.jpg");
-  padding:10px;
+  padding:35px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   color: grey;
-  height:200px;
+  height:240px;
   border-radius: 30px;
+  display: flex;
+  border: 8px solid #6394bf;
 }
 
 .introp{
@@ -226,6 +255,152 @@ h2{
   padding-bottom: 100px;
 }
 
-/* p{
-  padding: 0px;
-} */
+.Sun{
+  background-color: #F1F3F2;
+  background-repeat: no-repeat;
+  color: grey;
+  border-radius: 10px;
+
+}
+
+.Mon{
+  background-color: #C2D3DA;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: grey;
+  border-radius: 10px;
+}
+
+.Tues{
+  background-color: #81A3A7;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+.Wed{
+  background-color: #AFBADF;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: grey;
+  border-radius: 10px;
+}
+
+.Thurs{
+  background-color: #777CA8;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+  border-radius: 10px;
+}
+
+.Fri{
+  background-color: #585A56;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+  border-radius: 10px;
+}
+
+.Sat{
+  background-color: #272424;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+  border-radius: 10px;
+}
+
+ .row{
+  display: flex;
+  justify-content: space-around;
+}
+
+.plannertitle , .abouttitle , .moneytitle{
+  padding-left: 30px;
+}
+
+.biglogo{
+  width: 250px;
+  height: 250px;
+  border-radius: 30px;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+.introwriting{
+  padding: 25px;
+}
+
+ul{
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
+
+#records{
+  margin: 0;
+  padding: 0;
+  max-width: 40%;
+}
+
+#pushprice{
+  margin: 0;
+  padding: 0;
+  max-width: 30%;
+}
+
+.Weektitle{
+  font-size: 40px;
+}
+
+.histitle , .amotitle{
+  font-size: 40px;
+}
+
+h4{
+  font-size: 30px;
+}
+
+.L, .M, .T{
+  color: #4da0ff;
+  }
+
+.Todointro, .moneyintro{
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 30px;
+}
+
+ .plannerintro{
+   display: flex;
+   justify-content: space-around;
+   background-color: #dbdbdb;
+   border-radius: 30px;
+ }
+
+.introimg{
+  width: 600px;
+  height: 370px;
+  padding-top: 15px;
+  border-radius: 30px;
+
+}
+
+h3{
+  font-size: 70px;
+}
+
+h5{
+  font-size: 70px;
+  text-align: center;
+  text-decoration: underline;
+  color: grey;
+
+}
+
+#bottom{
+  margin:0px;
+}

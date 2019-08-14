@@ -10,10 +10,14 @@
   </head>
   <body>
     <header>
-      <div class = "logotitle">
-        <img id = "logo" src = "https://s3-eu-west-1.amazonaws.com/tpd/logos/588a2d590000ff00059b855a/0x0.png"> </a>
+      <div class = "row">
+        <div id = "logo">
+          <img src = "https://mail.google.com/mail/u/0?ui=2&ik=3125bd9b60&attid=0.2&permmsgid=msg-f:1641668290854409293&th=16c8609cd366544d&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ8r-PAcizVeQlPd3jS5huwNYTlczYZZSly28eH9RSv-rVLUgV6MzD-OawpP3_CNp-GkhcixgNC1pTwyhcHgmCriaoUS1FZi6BUa3JnkqJRuOrJSqzwUD26Ph1I&disp=emb&realattid=ii_jz8fv0hr1">
+        </div>
+        <div>
+          <h1 class = "plannertitle">Weekly Planner</h1>
+        </div>
       </div>
-      <h1 class = "plannertitle">Weekly Planner</h1>
       <nav class = "catagories">
         <a href = "planner.html">Weekly Planner</a>
         <a href = "moneyTracker.html"> Money Tracker</a>
@@ -23,7 +27,7 @@
     <br>
     <div class = "plannercontent">
       <div class = "Sun">
-        <p>Sunday</p>
+        <p class = "Weektitle">Sunday</p>
         <input id = "inputsun">
         <button id = "sunadd">Add</button>
         <ul id = "sunplan"></ul>
@@ -31,7 +35,7 @@
         <button id = "clearsun">Clear</button>
       </div>
       <div class = "Mon">
-        <p>Monday</p>
+        <p class = "Weektitle">Monday</p>
         <input id = "inputmon">
         <button id = "monadd">Add</button>
         <ul id = "monplan"></ul>
@@ -39,7 +43,7 @@
         <button id = "clearmon">Clear</button>
       </div>
       <div class = "Tues">
-        <p>Tuesday</p>
+        <p class = "Weektitle">Tuesday</p>
         <input id = "inputtues">
         <button id = "tuesadd">Add</button>
         <ul id = "tuesplan"></ul>
@@ -47,7 +51,7 @@
         <button id = "cleartues">Clear</button>
       </div>
       <div class = "Wed">
-        <p>Wednesday</p>
+        <p class = "Weektitle">Wednesday</p>
         <input id = "inputwed">
         <button id = "wedadd">Add</button>
         <ul id = "wedplan"></ul>
@@ -55,7 +59,7 @@
         <button id = "clearwed">Clear</button>
       </div>
       <div class = "Thurs">
-        <p>Thursday</p>
+        <p class = "Weektitle">Thursday</p>
         <input id = "inputthurs">
         <button id = "thursadd">Add</button>
         <ul id = "thursplan"></ul>
@@ -63,7 +67,7 @@
         <button id = "clearthurs">Clear</button>
       </div>
       <div class = "Fri">
-        <p>Friday</p>
+        <p class = "Weektitle">Friday</p>
         <input id = "inputfri">
         <button id = "friadd">Add</button>
         <ul id = "friplan"></ul>
@@ -71,7 +75,7 @@
         <button id = "clearfri">Clear</button>
       </div>
       <div class = "Sat">
-        <p>Saturday</p>
+        <p class = "Weektitle">Saturday</p>
         <input id = "inputsat">
         <button id = "satadd">Add</button>
         <ul id = "satplan"></ul>
@@ -81,7 +85,7 @@
     </div>
     <br>
     <div class = "clearall">
-        <button class = "clearallbutton">Clear all</button>
+        <button id = "clearallbutton">Clear all</button>
     </div>
     <br>
     <br>
@@ -89,9 +93,8 @@
     <br>
     <br>
     <br>
-    <br>
     <footer class = "footer">
-      <p>©️Duallers<p>
+      <p>©️2019Duallers<p>
     </footer>
   </body>
     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
@@ -114,5 +117,5 @@
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
     </script>
-    <script src="planner.js"></script>
+    <script src= "planner.js"></script>
 </html>

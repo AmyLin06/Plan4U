@@ -8,13 +8,13 @@ var thursadd = document.getElementById('thursadd');
 var friadd = document.getElementById('friadd');
 var satadd = document.getElementById('satadd');
 
-var clearsun = document.getElementById('clearsun')
-var clearmon = document.getElementById('clearmon')
-var cleartues = document.getElementById('cleartues')
-var clearwed = document.getElementById('clearwed')
-var clearthurs = document.getElementById('clearthurs')
-var clearfri = document.getElementById('clearfri')
-var clearsat = document.getElementById('clearsat')
+var clearsun = document.getElementById('clearsun');
+var clearmon = document.getElementById('clearmon');
+var cleartues = document.getElementById('cleartues');
+var clearwed = document.getElementById('clearwed');
+var clearthurs = document.getElementById('clearthurs');
+var clearfri = document.getElementById('clearfri');
+var clearsat = document.getElementById('clearsat');
 
 var clearall = document.getElementById('clearallbutton')
 

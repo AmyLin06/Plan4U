@@ -32,9 +32,8 @@ reminderAddbutton.onmousedown = function(){
   reminderlist.appendChild(reminderlistChild);
 }
 reminderClearbutton.onmousedown = function(){
-  document.getElementById("resminderlist").innerHTML = "";
+  document.getElementById("reminderlist").innerHTML = "";
 }
-
 
 db.collection("users").add({
     todo:"todoInput",
