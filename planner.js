@@ -1,7 +1,7 @@
 var db = firebase.firestore();
 
 logo.onmousedown = function(){
-  document.location.href = "plannerproject.html";
+  document.location.href = "index.html";
 }
 
 var sunadd = document.getElementById('sunadd');

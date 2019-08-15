@@ -1,65 +1,122 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/6.3.4/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/6.3.4/firebase-auth.js"></script>
-    <script defer src="/__/firebase/6.3.4/firebase-database.js"></script>
-    <script defer src="/__/firebase/6.3.4/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <link rel="stylesheet" href="plannerstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Long+Cang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chathura&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <header>
+      <div id = "logo" onclick = "window.location.href ='index.html'">
+        <img src = "logo.jpg">
+      </div>
+      <h1 class = "hometitle">Plan4U</h1>
+      <nav class = "catagories">
+        <a href = "#bottom">To-do/ Reminder List</a>
+        <a href = "planner.html">Weekly Planner</a>
+        <a href = "moneyTracker.html"> Money Tracker</a>
+        <a href = "aboutus.html">About Us</a>
+      </nav>
+    </header>
+    <br>
+    <div class = "maincontent">
+      <div class = "intro">
+        <div>
+          <img class = "biglogo" src = "logo.jpg">
+        </div>
+        <div class = "introwriting">
+          <p id = "slogan"></p>
+          <br>
+          <br>
+          <strong class = "introp"> Plan4U is a website that allows users to plan out their weeks so that they don't feel the overwhelming pressure of a busy life.
+              Plan4U has 3 major functions: the weekly planner, the to-do and reminder list, and the money tracker. Using these in the long term, people can stay on track and work effectively towards their goal.
+              Like the french writer, Antoine de Saint-Exupéry, once said, "A goal without a plan is just a wish."</strong>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class = "Todointro">
+        <div class = "bold">
+          <h3><strong class = "L">List</strong> them all</h3>
+          <p> Enter all the things you must do and all your reminders on the to-do list and reminder list so that you will never forget it!</p>
+        </div>
+        <div>
+          <img class = "introimg" src = "listshot.png">
+        </div>
+      </div>
+      <div class = "plannerintro">
+        <div>
+          <img class = "introimg" src = "weekshot.png">
+        </div>
+        <div class = "bold">
+          <h3><strong class = "M">Manage</strong> your plans</h3>
+          <p> Manage your time wisely by having a general overview of your weekly plans.</p>
+        </div>
+      </div>
+      <div class = "moneyintro">
+        <div class = "bold">
+          <h3><strong class = "T">Track</strong> your savings</h3>
+          <p>Track your expense and income with ease.</p>
+        </div>
+        <div>
+          <img class = "introimg" src = "moneyshot.png">
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <h5 id = "bottom" class = "start"> Start Planning Now!</h5>
+      <br>
+      <div class = "list">
+        <div class = "todo">
+          <p>To Do List<p>
+          <input id = "inputtodo" placeholder = "Enter plan">
+          <button id = "addtodo">Add</button>
+          <ul id = "todolist"></ul>
+          <button id = "cleartodo">Clear</button>
+        </div>
+        <div class = "reminder">
+          <p>Reminders<p>
+          <input id = "inputreminder" placeholder = "Enter reminders">
+          <button id = "addreminder">Add</button>
+          <ul id = "reminderlist"></ul>
+          <button id = "clearreminder">Clear</button>
+        </div>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <br>
+    <br>
+    <br>
+    <div class = "footer">
+      <p>©️2019Duallers<p>
+    <div>
   </body>
+  <script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCwHYulvW5O8nDB2xFkN70KOaN-c-qlANA",
+    authDomain: "planner-ecf49.firebaseapp.com",
+    databaseURL: "https://planner-ecf49.firebaseio.com",
+    projectId: "planner-ecf49",
+    storageBucket: "planner-ecf49.appspot.com",
+    messagingSenderId: "91148778677",
+    appId: "1:91148778677:web:2afa31dda3059a78"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+  <script src="homePlanner.js"></script>
 </html>

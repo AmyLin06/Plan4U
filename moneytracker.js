@@ -8,7 +8,7 @@ var expenseAddbutton = document.getElementById("expensebutton");
 var removeAllbutton = document.getElementById("clearexpense");
 
 logo.onmousedown = function(){
-  document.location.href = "plannerproject.html";
+  document.location.href = "index.html";
 }
 incomeAddbutton.onclick = function(){
   var incomenameinput = document.getElementById("inputincome");

@@ -4,7 +4,7 @@ var todoAddbutton = document.getElementById("addtodo");
 var todoClearbutton = document.getElementById("cleartodo");
 
 logo.onmousedown = function(){
-  document.location.href = "plannerproject.html";
+  document.location.href = "index.html";
 }
 
 todoAddbutton.onclick = function(){
